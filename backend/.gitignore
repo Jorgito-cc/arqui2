@@ -1,0 +1,27 @@
+# Dependencias de Composer
+**/vendor/
+
+# Configuración sensible (Seguridad)
+
+# Logs
+**/logs
+*.log
+**/error_log
+
+# IDEs y Editores
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Temporales de PHP
+**/composer.phar
+**/.php-cs-fixer.cache
+**/.phpunit.result.cache

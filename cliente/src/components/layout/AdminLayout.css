@@ -1,0 +1,57 @@
+/* AdminLayout */
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-main);
+}
+
+.admin-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.admin-header {
+  padding: 0 28px;
+  height: 56px;
+  background: var(--bg-white);
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.header-breadcrumbs {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.header-breadcrumbs .active-bc {
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.logout-btn {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 7px 16px;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+  color: white;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 28px;
+  overflow-y: auto;
+}

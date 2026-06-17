@@ -1,0 +1,239 @@
+/* EncargadoPage - Tema Claro */
+
+.encargado-container {
+  padding: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.encargado-header {
+  margin-bottom: 28px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.stat-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.stat-label {
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.highlight-text { color: #0284c7; }
+.success-text   { color: #16a34a; }
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-left: 4px solid #e2e8f0;
+  transition: box-shadow 0.2s;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.task-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.09);
+}
+
+.task-card.pendiente   { border-left-color: #cbd5e1; }
+.task-card.en-proceso  { border-left-color: #0284c7; background: #f0f9ff; }
+.task-card.finalizado  { border-left-color: #16a34a; opacity: 0.85; }
+
+.task-badge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priority-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.priority-badge.alta  { background: #fee2e2; color: #dc2626; }
+.priority-badge.media { background: #fef3c7; color: #d97706; }
+.priority-badge.baja  { background: #dcfce7; color: #16a34a; }
+
+.status-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.task-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+
+.task-desc {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.task-meta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.task-actions {
+  margin-top: auto;
+  padding-top: 14px;
+}
+
+.action-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: background 0.15s;
+}
+
+.start-btn {
+  background: #0284c7;
+  color: white;
+}
+
+.start-btn:hover { background: #0369a1; }
+
+.finish-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.finish-btn:hover { background: #15803d; }
+
+.completed-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #16a34a;
+  font-weight: 600;
+  background: #dcfce7;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.finish-task-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.evidence-upload-zone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.evidence-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px;
+  background: #ffffff;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.15s;
+}
+
+.evidence-btn:hover {
+  background: #f0f9ff;
+  border-color: #0284c7;
+}
+
+.evidence-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.cancel-evidence {
+  flex: 1;
+  background: transparent;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: all 0.15s;
+}
+
+.cancel-evidence:hover {
+  background: #f1f5f9;
+}
+
+.evidence-actions .finish-btn { flex: 2; }
+
+.action-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  text-align: center;
+  color: #94a3b8;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}

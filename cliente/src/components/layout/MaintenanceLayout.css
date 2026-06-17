@@ -1,0 +1,65 @@
+/* MaintenanceLayout - Panel Técnico */
+
+.maintenance-layout {
+  min-height: 100vh;
+  background: var(--bg-main);
+  display: flex;
+  flex-direction: column;
+}
+
+.maintenance-header {
+  height: 56px;
+  padding: 0 32px;
+  background: var(--bg-sidebar);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e0f2fe;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-pill {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.logout-pill {
+  background: rgba(220, 38, 38, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  padding: 6px 14px;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.logout-pill:hover {
+  background: #dc2626;
+  color: white;
+  border-color: #dc2626;
+}
+
+.maintenance-content {
+  flex: 1;
+  padding: 28px;
+  overflow-y: auto;
+}

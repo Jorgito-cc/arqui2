@@ -1,0 +1,24 @@
+{
+    "name": "copa677/microserviciousuario",
+    "description": "microservicio para la adinistracion de usuarios",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "copa777",
+            "email": "copadalessandro@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "nikic/fast-route": "^2.0@dev",
+        "illuminate/database": "12.x-dev",
+        "illuminate/events": "12.x-dev",
+        "vlucas/phpdotenv": "^5.6@dev",
+        "firebase/php-jwt": "dev-main"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "spaceshift/reporte_problemas",
+    "description": "Microservicio para capturar reportes de problemas universitarios",
+    "type": "project",
+    "require": {
+        "php": ">=8.2.12",
+        "illuminate/database": "^11.0",
+        "illuminate/events": "^11.0",
+        "vlucas/phpdotenv": "^5.5",
+        "nikic/fast-route": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "repositories": [{
+        "name": "packagist",
+        "type": "composer",
+        "url": "http://repo.packagist.org"
+    }],
+    "config": {
+        "secure-http": false,
+        "disable-tls": true
+    }
+}
